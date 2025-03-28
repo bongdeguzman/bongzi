@@ -132,10 +132,6 @@
                 }
             });
         });
-        document.getElementById("volumeSlider").addEventListener("input", function () {
-            var audio = document.getElementById("songs");
-            audio.volume = this.value;
-        });
     </script>
 </head>
 
@@ -237,5 +233,10 @@
     <div style="display: none;" id="curEffClr">#ffffff</div>
     <script src="https://cdn.pablitokupalino.xyz/js/cur-snow.js"></script>
 </body>
-
+    <script>
+        document.getElementById("volumeSlider").addEventListener("input", function () {
+            var audio = document.getElementById("songs");
+            audio.volume = this.value;
+        });
+    </script>
 </html>
